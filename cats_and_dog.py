@@ -51,7 +51,7 @@ test_out_label = np.array(test_out_label)
 # Initialize SVM classifier
 model = SVC(kernel='rbf', C=100)
 # Batch training
-batch_size = 5000
+batch_size = 6300
 print('Starting to train the model...')
 train_p=[]
 for i in range(0, len(feature), batch_size):
