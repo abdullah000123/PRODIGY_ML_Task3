@@ -18,6 +18,8 @@ for image in os.listdir(train_data_set):
     if image.endswith('.jpg') and image[:3] == 'cat':
         label = 1
     elif image.endswith('.jpg') and image[:3] == 'dog':
+        label = 2
+    else:
         label = 0
 
     image_path = os.path.join(train_data_set, image)
